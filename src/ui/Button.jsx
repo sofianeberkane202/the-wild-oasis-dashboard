@@ -51,6 +51,7 @@ const variations = {
 };
 
 const Button = styled.button`
+  width: fit-content;
   border: none;
   background-color: transparent;
   border-radius: var(--border-radius-sm);

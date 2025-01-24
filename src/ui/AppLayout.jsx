@@ -10,11 +10,21 @@ const Header = styled.nav`
 `;
 
 const Main = styled.main`
-  background-color: var(--color-grey-50);
   padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+
+  overflow-y: auto;
 `;
 
 const StyledAppLayout = styled.div`
+  background-color: var(--color-grey-50);
   height: 100%;
   display: grid;
   grid-template-columns: 24rem 1fr;

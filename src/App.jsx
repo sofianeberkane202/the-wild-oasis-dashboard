@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import GlobalStyles from './styles/GlobalStyles';
 import Home from './pages/Home';
 import Bookings from './pages/Bookings';
-import Cabins from './pages/Cabins';
+import Cabins from './features/Cabins/Cabins';
 import Users from './pages/Users';
 import Settings from './pages/Settings';
 import NotFound from './pages/NotFound';

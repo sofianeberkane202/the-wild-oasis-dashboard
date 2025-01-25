@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Button from '../../ui/Button';
 import { useState } from 'react';
 import Cabin from './cabin';
+import CreateNewCabin from './CreateNewCabin';
 
 const cabins = [
   {
@@ -187,6 +188,12 @@ function Cabins() {
     }
     setActivedCabin(id);
   }
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <h1>All cabins</h1>
@@ -215,10 +222,12 @@ function Cabins() {
           </Rows>
         </Table>
 
-        <Button size="medium" variation="primary">
+        <Button size="medium" variation="primary" onClick={openModal}>
           Add new Cabin
         </Button>
       </Content>
+
+      {isModalOpen && <CreateNewCabin onClose={closeModal} />}
     </>
   );
 }

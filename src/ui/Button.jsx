@@ -51,6 +51,7 @@ const variations = {
 };
 
 const Button = styled.button`
+  display: inline-block;
   width: fit-content;
   border: none;
   background-color: transparent;
